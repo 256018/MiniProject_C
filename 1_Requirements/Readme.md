@@ -24,7 +24,7 @@ There are several benefits associated with bank management system some of which 
 -- Content 
 ## Defining Our System
 ### Architecture
-![Architecture](https://github.com/256018/MiniProject/blob/main/Requirements/Architecture.png)
+![Architecture](https://github.com/256018/MiniProject_C/blob/master/1_Requirements/Architecture.png)
 
 - Bank Management System application is capable of performing following functions-: . 
     - Add account
@@ -36,7 +36,7 @@ There are several benefits associated with bank management system some of which 
     - Reading account details from File
     - Saving all account dtails to File
 ## SWOT ANALYSIS
-![SWOT-Analysis](https://github.com/256018/MiniProject/blob/main/Requirements/SWOT%20Analysis.png)
+![SWOT-Analysis](https://github.com/256018/MiniProject_C/blob/master/1_Requirements/SWOT%20Analysis.png)
 
 # 4W&#39;s and 1&#39;H
 
