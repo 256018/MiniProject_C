@@ -40,5 +40,5 @@ void menu(AccountInfo *account, int *numberOfAccounts, char *filename)
             printf("Turning Off.\n");
             break;
         }
-	}
+     }
 }
