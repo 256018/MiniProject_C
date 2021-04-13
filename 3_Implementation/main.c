@@ -21,6 +21,7 @@ int main()
             numberOfAccounts++;
         }
     }
+    /*
     int choice=0;
     while(1)
     {
@@ -59,6 +60,7 @@ int main()
             break;
         }
 	}
-    //menu(account, &numberOfAccounts, filename);
+       */
+    menu(account, &numberOfAccounts, filename);
     return 0;
 }
