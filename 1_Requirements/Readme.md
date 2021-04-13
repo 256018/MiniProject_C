@@ -59,16 +59,16 @@ There are several benefits associated with bank management system some of which 
 
 | ID   | Description                                                                                       | Category  | Status |
 |------|---------------------------------------------------------------------------------------------------|-----------|--------|
-| HR01 | User should be able to create a new bank account by providing all details.                        | Technical | TBD-S1 |
-| HR02 | User should be able to display all accounts details.                                              | Technical | TBD-S1 |
-| HR03 | User should be able to search for a given account by account number as input.                     | Technical | TBD-S1 |
-| HR04 | User should be able to withdraw from account only if the user have sufficient balance in account. | Technical | TBD-S1 |
-| HR05 | User should not be able to deposit more than the required deposit limit for a day.                | Technical | TBD-S1 |
-| HR06 | User should be able to sort all records based on account number.                                  | Technical | TBD-S1 |
-| HR07 | User should be able to sort all records based on owner's name                                     | Technical | TBD-S1 |
-| HR08 | User should be able to calculate interest on given sum.                                           | Technical | TBD-S1 |
-| HR09 | When user quits the system all the transaction or changes made by the user should be saved.       | Scenario  | TBD-S1 |
-| HR10 | Data of all the users should be protected.                                                        | Scenario  | TBD-S1 |
+| HR01 | User should be able to create a new bank account by providing all details.                        | Technical | Done |
+| HR02 | User should be able to display all accounts details.                                              | Technical | Done |
+| HR03 | User should be able to search for a given account by account number as input.                     | Technical | Done |
+| HR04 | User should be able to withdraw from account only if the user have sufficient balance in account. | Technical | Done |
+| HR05 | User should not be able to deposit more than the required deposit limit for a day.                | Technical | Done |
+| HR06 | User should be able to sort all records based on account number.                                  | Technical | Done |
+| HR07 | User should be able to sort all records based on owner's name                                     | Technical | Done |
+| HR08 | User should be able to calculate interest on given sum.                                           | Technical | Done |
+| HR09 | When user quits the system all the transaction or changes made by the user should be saved.       | Scenario  | Done |
+| HR10 | Data of all the users should be protected.                                                        | Scenario  | Done |
 
 ##  Low level Requirements:
 | ID   | Description                                                                                                                                                                                                              | HLR ID     | Status (Implemented/Future) |
