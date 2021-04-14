@@ -14,3 +14,9 @@ $(PROJECT_NAME).exe : $(SRC) main.c
 
 run :
 	$(PROJECT_NAME).exe
+
+DOCUMENTATION_OUTPUT = documentation/html
+
+# Document the code using Doxygen
+doc:
+	make -C ./documentation
