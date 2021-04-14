@@ -20,8 +20,7 @@ There are several benefits associated with bank management system some of which 
 - It has a ease of use along with complete reference.
 
 ## Cost and Features
-![Description](Link to Pic)
--- Content 
+The project is well built and all the requirements are meet so the cost can be varied according to the market.
 ## Defining Our System
 ### Architecture
 ![Architecture](https://github.com/256018/MiniProject_C/blob/master/1_Requirements/Architecture.png)
