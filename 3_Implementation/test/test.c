@@ -24,6 +24,10 @@ void test_sort(void)
 {
     TEST_ASSERT_EQUAL(SUCCESS, sort_account(account, numberOfAccounts));
 }
+void test_write(void)
+{
+    TEST_ASSERT_EQUAL(SUCCESS, write_file(account, numberOfAccounts, "Sample"));
+}
 int main(void)
 {
     UNITY_BEGIN();
@@ -32,5 +36,6 @@ int main(void)
     RUN_TEST(test_details);
     RUN_TEST(test_search);
     RUN_TEST(test_sort);
+    RUN_TEST(test_write);
     return UNITY_END();
 }
