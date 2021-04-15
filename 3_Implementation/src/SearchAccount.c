@@ -1,7 +1,5 @@
 #include "header.h"
-#include <stdio.h>
-#include <string.h>
-int search_account(AccountInfo *account, int *numberOfAccounts)
+error_t search_account(AccountInfo *account, int *numberOfAccounts)
 {
     int choice, i, accountNo;
     char name[30];
@@ -13,7 +11,7 @@ int search_account(AccountInfo *account, int *numberOfAccounts)
     scanf("%d", &choice);
     if (choice == 1)
     {
-        printf("Please Enter Account Number: ]n");
+        printf("Please Enter Account Number:\n");
         scanf("%d", &accountNo);
         for (i = 0; i < *numberOfAccounts; i++)
         {
@@ -22,6 +20,7 @@ int search_account(AccountInfo *account, int *numberOfAccounts)
                 printf("Given Account No. is registered with following details\n");
                 printf("Account No.:%d\tName:%s\tBalance:%f\tAccount Type:%s\n", account[i].account_no, account[i].name, account[i].balance, account[i].account_type);
                 searchflag = 1;
+                return SUCCESS;
             }
         }
         if (searchflag == 0)
@@ -41,6 +40,7 @@ int search_account(AccountInfo *account, int *numberOfAccounts)
                 printf("Given Account No. is registered with following details\n");
                 printf("Account No.:%d\tName:%s\tBalance:%f\tAccount Type:%s\n", account[i].account_no, account[i].name, account[i].balance, account[i].account_type);
                 searchflag = 1;
+                return SUCCESS;
             }
         }
         if (searchflag == 0)
@@ -48,5 +48,4 @@ int search_account(AccountInfo *account, int *numberOfAccounts)
             printf("Given Account No. is not registered with us\n");
         }
     }
-    return searchflag;
 }
