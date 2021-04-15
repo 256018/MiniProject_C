@@ -16,11 +16,21 @@ void test_details(void)
 {
     TEST_ASSERT_EQUAL(SUCCESS, print_accountt(account, numberOfAccounts));
 }
+void test_search(void)
+{
+    TEST_ASSERT_EQUAL(SUCCESS, search_account(account, numberOfAccounts));
+}
+void test_sort(void)
+{
+    TEST_ASSERT_EQUAL(SUCCESS, sort_account(account, numberOfAccounts));
+}
 int main(void)
 {
     UNITY_BEGIN();
     //RUN_TEST(test_menu);
     RUN_TEST(test_register_account);
     RUN_TEST(test_details);
+    RUN_TEST(test_search);
+    RUN_TEST(test_sort);
     return UNITY_END();
 }
