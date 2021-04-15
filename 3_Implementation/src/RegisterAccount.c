@@ -1,17 +1,13 @@
 #include "header.h"
-#include <stdio.h>
-#include<string.h>
-void register_account(AccountInfo *account, int *numberOfAccounts)
+error_t register_account(AccountInfo *account, int* numberOfAccounts)
 {
     char name[30];
     int age;
     char phone[12];
     char city[20];
     char accType[10];
-    int accNum,i,flag;
-	printf("Account Registration:\n");
-	printf("AccountNo.\tName\n");
-    flag=0;
+    int accNum,i,flag=0;
+    printf("%d",*numberOfAccounts);
     if(*numberOfAccounts<1000)
     {
     	printf("Enter Account Number\n");
@@ -36,7 +32,7 @@ void register_account(AccountInfo *account, int *numberOfAccounts)
            scanf("%d",&age);
            printf("Enter phone number\n");
            scanf("%s",&phone);
-           printf("Entery city\n");
+           printf("Enter city\n");
            scanf("%s",&city);
            printf("Enter Account Type\n");
            scanf("%s",&accType);
@@ -47,11 +43,10 @@ void register_account(AccountInfo *account, int *numberOfAccounts)
 		   account[*numberOfAccounts].balance=0.0;
             *numberOfAccounts=*numberOfAccounts+1;
         }
-        printf("Successful\n");
+        return SUCCESS;
     }
     else
     {
-        printf("Memory Full\n");
+        return ERROR_MEMORY_FULL;
     }
-
 }
