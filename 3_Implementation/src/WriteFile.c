@@ -1,7 +1,5 @@
 #include "header.h"
-#include<stdio.h>
-#include<stdlib.h>
-void write_file(AccountInfo *account, int *numberOfAccounts, char *filename)
+error_t write_file(AccountInfo *account, int *numberOfAccounts, char *filename)
 {
     int i;
 	FILE *fptr;
@@ -14,6 +12,7 @@ void write_file(AccountInfo *account, int *numberOfAccounts, char *filename)
 	for(i=0;i<*numberOfAccounts;i++)
 	{
 		fwrite(&account[i],sizeof(account[i]),1,fptr);
+		return SUCCESS;
+		fclose(fptr);
 	}
-	fclose(fptr);
 }
