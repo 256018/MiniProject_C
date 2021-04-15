@@ -19,10 +19,10 @@ typedef enum error_t
 }error_t;
 
 void menu(AccountInfo *account, int *numberOfAccounts, char *filename);
-void register_account(AccountInfo *acc, int *numberOfAccounts);
-void print_account_details(AccountInfo *acc, int *numberOfAccounts);
-int search_account_details(AccountInfo *account, int *numberOfAccounts);
+error_t register_account(AccountInfo *acc, int* numberOfAccounts);
+error_t print_account_details(AccountInfo *acc, int *numberOfAccounts);
+error_t search_account_details(AccountInfo *account, int *numberOfAccounts);
 void change_account_balance(AccountInfo *account, int *numberOfAccounts);
-void sort_account(AccountInfo *account, int *numberOfAccounts);
-void write_account_to_file(AccountInfo *account, int *numberOfAccounts, char *filename);
+error_t sort_account(AccountInfo *account, int *numberOfAccounts);
+error_t write_account_to_file(AccountInfo *account, int *numberOfAccounts, char *filename);
 #endif
