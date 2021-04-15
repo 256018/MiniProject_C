@@ -1,6 +1,5 @@
 #include "header.h"
-#include<stdio.h>
-void sort_account(AccountInfo *account, int *numberOfAccounts)
+error_t sort_account(AccountInfo *account, int *numberOfAccounts)
 {
     int i=0,j=0,k,choice;
     AccountInfo tempstruct;
@@ -10,7 +9,6 @@ void sort_account(AccountInfo *account, int *numberOfAccounts)
     scanf("%d",&choice);
     if(choice == 1)
     {
-
 		for(i=0;i<*numberOfAccounts-1;i++)
 		{
 			for(j=i+1;j<*numberOfAccounts;j++)
@@ -24,6 +22,7 @@ void sort_account(AccountInfo *account, int *numberOfAccounts)
 				}
 			}
 		}
+		return SUCCESS;
     }
     if(choice == 2)
     {
@@ -40,6 +39,6 @@ void sort_account(AccountInfo *account, int *numberOfAccounts)
 				}
 			}
 		}
+		return SUCCESS;
     }
-    printf("Sorted Successfully. Thank You!\n");
 }
