@@ -1,4 +1,5 @@
 #include "header.h"
+#include<stdio.h>
 error_t search_account(AccountInfo *account, int *numberOfAccounts)
 {
     int choice, i, accountNo;
